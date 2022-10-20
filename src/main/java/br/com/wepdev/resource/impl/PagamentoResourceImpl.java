@@ -21,7 +21,6 @@ public class PagamentoResourceImpl implements PagamentoResource{
 	
 	@Override
 	public ResponseEntity<Pagamento> pagamento(Pagamento pagamento) {
-		
 		pagamentoService.enviarPagamento(pagamento);
 		
 		return ResponseEntity.status(HttpStatus.CREATED).build();
